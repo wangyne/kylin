@@ -37,6 +37,7 @@ public class ScheduleService {
      * @Scheduled(cron = "1/5 * * * * *")
      */
     @Scheduled(cron = "0 0 7 * * ?")
+    @Scheduled(cron = "0 0 8 * * ?")
     public void task1() throws Exception {
 
 
