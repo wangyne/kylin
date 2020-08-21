@@ -1,6 +1,7 @@
 package com.kylin.demo.entity;
 
 import com.alibaba.fastjson.annotation.JSONField;
+import lombok.Data;
 
 import java.util.List;
 
@@ -10,6 +11,7 @@ import java.util.List;
  * @Date 2019-08-21 14:24
  * @Created by zhangbinbin
  */
+@Data
 public class Jobs {
     private String submitter;
 
@@ -22,35 +24,5 @@ public class Jobs {
     @JSONField(name = "steps")
     private List<Job> steps;
 
-    public String getSubmitter() {
-        return submitter;
-    }
 
-    public void setSubmitter(String submitter) {
-        this.submitter = submitter;
-    }
-
-    public String getJobStatus() {
-        return jobStatus;
-    }
-
-    public void setJobStatus(String jobStatus) {
-        this.jobStatus = jobStatus;
-    }
-
-    public String getRelateCube() {
-        return relateCube;
-    }
-
-    public void setRelateCube(String relateCube) {
-        this.relateCube = relateCube;
-    }
-
-    public List<Job> getSteps() {
-        return steps;
-    }
-
-    public void setSteps(List<Job> steps) {
-        this.steps = steps;
-    }
 }
